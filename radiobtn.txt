@@ -1,0 +1,10 @@
+System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");
+		WebDriver d=new ChromeDriver();//upcasting
+		d.get("https://artoftesting.com/samplesiteforselenium");
+		WebElement female=d.findElement(By.xpath("//*[@id=\"female\"]"));
+		female.click();
+		WebElement auto=d.findElement(By.xpath("//*[@id=\"commonWebElements\"]/form[2]/input[1]"));
+		auto.click();
+		WebElement perf=d.findElement(By.xpath("//*[@id=\"commonWebElements\"]/form[2]/input[2]"));
+		perf.click();
+		

@@ -1,0 +1,6 @@
+System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");
+		WebDriver d1=new ChromeDriver();//upcasting
+		d1.get("https://www.amazon.in/");
+		d1.manage().window().maximize();
+		d1.findElement(By.id("twotabsearchtextbox")).sendKeys("Chair");
+		d1.findElement(By.id("nav-search-submit-button")).click();
